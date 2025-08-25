@@ -1,13 +1,12 @@
-import React from "react";
 
-function Task() {
+function Task({ text, category, onDeleteTask }) {
   return (
-    <div className="task">
-      <div className="label">CATEGORY HERE</div>
-      <div className="text">TEXT HERE</div>
-      <button className="delete">X</button>
-    </div>
-  );
+    <li className="task">
+      <span>{text}</span>{" "}
+      <span className="category">{category}</span>
+      <button onClick={() => onDeleteTask && onDeleteTask(text)}>Delete</button>
+    </li>
+  )
 }
 
-export default Task;
+export default Task
