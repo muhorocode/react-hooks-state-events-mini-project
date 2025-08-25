@@ -14,4 +14,4 @@ function CategoryFilter({ categories, selectedCategory, onCategoryChange }) {
   );
 }
 
-export default CategoryFilter;
+export default CategoryFilter

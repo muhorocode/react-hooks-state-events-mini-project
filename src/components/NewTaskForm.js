@@ -34,4 +34,4 @@ function NewTaskForm({ categories, onTaskFormSubmit }) {
   );
 }
 
-export default NewTaskForm;
+export default NewTaskForm
